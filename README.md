@@ -21,6 +21,18 @@
 ### Association
 - has_many :groups_users
 - has_many :users, through: :groups_users
+- has_many :messages, through: :groups_messages
+
+## groups_messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|message_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :message
 
 
 ## usersテーブル
@@ -49,6 +61,7 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+- has_many :group, through: :groups_messages
 
 
 This README would normally document whatever steps are necessary to get the
