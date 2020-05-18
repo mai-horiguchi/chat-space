@@ -1,1 +1,22 @@
-＜サイドバー＞
+.Side-bar
+  .sheader
+    .sheader__user
+      .sheader__user__name
+        masa
+      .sheader__user__icon
+      = link_to "#" do
+        = icon('fas', 'edit', class: "sheader__user__icon--btn")
+      = link_to "#" do
+        = icon('fas', 'cog', class: "sheader__user__icon--btn")
+
+  .glist
+    .group
+      .group__name
+        techcamp
+      .group__message
+        まだメッセージがありません
+    .group
+      .group__name
+        test
+      .group__message
+        testtext
