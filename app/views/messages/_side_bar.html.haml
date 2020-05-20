@@ -11,13 +11,10 @@
 
   .smain
     .glist
-      .group
-        .group__name
-          techcamp
-        .group__message
-          まだメッセージがありません
-      .group
-        .group__name
-          test
-        .group__message
-          testtext
+      - current_user.groups.each do |group|
+        .group
+          = link_to '#' do
+            .group__name
+              = group.name
+            .group__message
+              まだメッセージがありません
