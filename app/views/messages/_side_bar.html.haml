@@ -4,7 +4,7 @@
       .sheader__user__name
         = current_user.name
       .sheader__user__icon
-      = link_to "#" do
+      = link_to "groups/new" do
         = icon('fas', 'edit', class: "sheader__user__icon--btn")
       = link_to edit_user_path(current_user) do
         = icon('fas', 'cog', class: "sheader__user__icon--btn")
