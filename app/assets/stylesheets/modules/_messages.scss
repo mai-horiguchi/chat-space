@@ -32,6 +32,7 @@
   &__message-list {
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
+    overflow: auto;
   }
 
   &__message-form {
