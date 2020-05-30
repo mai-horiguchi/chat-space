@@ -2,33 +2,23 @@
   .cheader
     .cheader__group
       .cheader__group__name
-        masa
+        = @group.name
       .cheader__group__member
-        Member : masa
-    = link_to "#", class: "cheader__edit" do
+        Member : 
+        - @group.users.each do |user|
+          = user.name
+    = link_to edit_group_path(@group), class: "cheader__edit" do
       Edit
+
   .cmain
-    .messages
-      .messages__info
-        .messages__info__name
-          masa
-        .messages__info__data
-          2020/05/16(Sat) 10:00:00
-      .messages__comment
-        おはよう！
-    .messages
-      .messages__info
-        .messages__info__name
-          masa
-        .messages__info__data
-          2020/05/16(Sat) 10:00:00
-      .messages__comment
-        今日は夜から雨
+    .MessageField
+      = render @messages
+
   .cfooter
-    %form.form
+    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
       .fcontents
-        %input.fcontents__text{type: "text_area", placeholder: "type a message"}
-        %label.fcontents__image
+        = f.text_field :content, class: 'fcontents__text', placeholder: 'type a message'
+        = f.label :image, class: 'fcontents__image' do
           = icon('far', 'image')
-          %input.fcontents__image__file{type: "file"}
-      %input.submit{type: "submit", value: "Send"}
+          = f.file_field :image, class: 'fcontents__image__file'
+      = f.submit 'Send', class: 'submit'
