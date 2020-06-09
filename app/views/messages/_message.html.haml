@@ -2,7 +2,7 @@
   .Message-info
     .Message-info__userName
       = message.user.name
-    .Message-info__date
+    .Message-info__data
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .Message
     - if message.content.present?
