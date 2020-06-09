@@ -38,11 +38,12 @@
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 35px 0 0 40px;
+    overflow:scroll;
 
-    .messages {
-      &__info {
+    .MessageArea {
+      .Message-info {
         display: flex;
-        &__name {
+        &__useName {
           color: #333333;
           font-size: 16px;
           font-weight: bold;
@@ -53,7 +54,7 @@
           padding-left: 10px;
         }
       }
-      &__comment {
+      .Message__content {
         color: #434A54;
         font-size: 14px;
         padding: 12px 0 46px;
