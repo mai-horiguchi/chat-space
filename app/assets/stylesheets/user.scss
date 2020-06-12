@@ -22,13 +22,13 @@
       display: block;
       width: 60px;
       margin-top: 5px;
-      border-bottom: 1px solid #38aef0;
+      border-bottom: 1px solid $brue
     }
   }
 
   .Button {
     margin-top: 40px;
-    $white
+    color: $white
     background-color: #ccc;
   }
 }
@@ -91,7 +91,7 @@
 
 .UserButton {
   margin-top: 20px;
-  $white
+  color: $white
   background-color: #38aef0;
 }
 

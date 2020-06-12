@@ -21,12 +21,12 @@
 }
 
 .Main-chat {
-  background-color: #ffffff;
+  background-color: $white
   width: calc(100vw - 300px);
 
   &__group {
     height: 100px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
   }
 
   &__message-list {

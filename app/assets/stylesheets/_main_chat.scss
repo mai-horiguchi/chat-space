@@ -1,10 +1,10 @@
 .Main-chat {
-  background-color: #ffffff;
+  background-color: $white
   width: calc(100vw - 300px);
 
   .cheader {
     height: 100px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
@@ -12,21 +12,21 @@
     &__group {
 
       &__name {
-        color: #333333;
+        color: #333;
         font-size: 20px;
         padding-top: 35px;
       }
       &__member {
-        color: #999999;
+        color: #999;
         font-size: 12px;
         padding-top: 15px;
       }
     }
 
     &__edit {
-      color: #38aef0;
+      color: $brue
       margin-top: 28px;
-      border: 1px solid #38aef0;
+      border: 1px solid $brue
       padding: 0 20px;
       height: 40px;
       line-height: 40px;
@@ -38,18 +38,18 @@
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 35px 0 0 40px;
-    overflow:scroll;
+    overflow: scroll;
 
     .MessageArea {
       .Message-info {
         display: flex;
         &__userName {
-          color: #333333;
+          color: #333;
           font-size: 16px;
           font-weight: bold;
         }
         &__data {
-          color: #999999;
+          color: #999;
           font-size: 12px;
           padding-left: 10px;
         }
@@ -102,8 +102,8 @@
       }
 
       .submit {
-        background-color: #38aef0;
-        $white
+        background-color: $brue
+        color: $white
         height: 50px;
         font-size: 16px;
         margin-left: 15px;
