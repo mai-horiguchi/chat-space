@@ -43,7 +43,7 @@
     .MessageArea {
       .Message-info {
         display: flex;
-        &__useName {
+        &__userName {
           color: #333333;
           font-size: 16px;
           font-weight: bold;
@@ -103,7 +103,7 @@
 
       .submit {
         background-color: #38aef0;
-        color: #ffffff;
+        $white
         height: 50px;
         font-size: 16px;
         margin-left: 15px;
