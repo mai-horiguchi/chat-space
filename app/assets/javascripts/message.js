@@ -57,7 +57,7 @@ $(function(){
       let html = buildHTML(data);
       $('.cmain').append(html);
       $('.cmain').animate({ scrollTop: $('.cmain')[0].scrollHeight});     
-      $('form')[0].reset();
+      $('.form')[0].reset();
       $(".submit").prop('disabled', false);
     })
   });
