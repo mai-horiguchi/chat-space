@@ -1,3 +1,7 @@
+a{
+  text-decoration: none;
+}
+
 .Side-bar {
   background-color: #253141;
   width: 300px;
@@ -16,7 +20,7 @@
       justify-content: space-between;
 
       &__name {
-        color: #ffffff;
+        $white
         font-weight: bold;
         width: 200px;
       }
@@ -24,7 +28,7 @@
         width: 60px;
 
         &--btn {
-          color: #ffffff;
+          color: $white
           padding-left: 5px;
         }
       }
@@ -38,15 +42,16 @@
       padding: 0 20px;
       
       .group {
-        color: #ffffff;
-
+        
         &__name {
           font-size: 15px;
           padding: 20px 0 5px;
+          color: $white
         }
         &__message {
           font-size: 11px;
           padding-bottom: 40px;
+          color: $white
         }
       }
     }
